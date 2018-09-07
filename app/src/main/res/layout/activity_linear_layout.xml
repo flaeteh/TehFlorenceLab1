@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LinearLayoutActivity">
+
+
+    <ImageView
+        android:id="@+id/img_one"
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TITLE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/text_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:textSize="18sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginBottom="5sp"
+        />
+
+    <TextView
+        android:id="@+id/text_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance from UST:"
+        android:textSize="18sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginBottom="50sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BACK"
+            android:textStyle="bold"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="130sp"
+            />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NEXT"
+            android:textStyle="bold"
+            android:layout_marginRight="15sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

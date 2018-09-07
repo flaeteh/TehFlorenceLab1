@@ -1,0 +1,78 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_launcher_background"
+        app:layout_constraintDimensionRatio="H,16:11.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TITLE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="163dp" />
+
+    <TextView
+        android:id="@+id/text_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Location:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <TextView
+        android:id="@+id/text_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Distance from UST:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="114dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="BACK"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="114dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="NEXT"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="447dp" />
+
+</android.support.constraint.ConstraintLayout>
